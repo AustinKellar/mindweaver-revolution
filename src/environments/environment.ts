@@ -3,9 +3,16 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  firebaseConfig: {
+    apiKey: "AIzaSyDBrGArQafhegVfQmkhnme1rGxOd3cAHQk",
+    authDomain: "mindweaver-cf2d4.firebaseapp.com",
+    databaseURL: "https://mindweaver-cf2d4.firebaseio.com",
+    projectId: "mindweaver-cf2d4",
+    storageBucket: "mindweaver-cf2d4.appspot.com",
+    messagingSenderId: "886746481645"
+  }
 };
-
 /*
  * For easier debugging in development mode, you can import the following file
  * to ignore zone related error stack frames such as `zone.run`, `zoneDelegate.invokeTask`.

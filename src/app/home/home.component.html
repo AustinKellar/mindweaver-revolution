@@ -1,0 +1,12 @@
+<h1>Mindweaver</h1>
+<div *ngFor="let weave of this.weaves">
+    <label>Title: </label> {{ weave.title }}<br>
+    <label>Creator: </label> {{ weave.creator.displayName }}<br>
+    <label>Purpose: </label> {{ weave.purpose }}<br>
+    <label>Mambers: </label><br>
+    <div *ngFor="let member of weave.members" style="padding-left: 20px;">
+        <label>Name: </label> {{ member.displayName }}
+    </div>
+    <button (click)="deleteWeave(weave.id)">Delete</button>
+    <br><br>
+</div>
